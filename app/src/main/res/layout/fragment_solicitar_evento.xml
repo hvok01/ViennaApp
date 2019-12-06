@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="80dp"
+            android:text="@string/desde_esta_seccion_pod_s_solicitar_un_nuevo_evento"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/ralewayregular"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="80dp"
+            android:background="@color/colorSecondary"
+            android:text="@string/nombre_evento"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/ralewaybold"/>
+
+        <EditText
+            android:id="@+id/etNombreEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="80dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="@string/nombre_evento"
+            android:importantForAutofill="no"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:fontFamily="@font/ralewayregular"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="80dp"
+            android:background="@color/colorSecondary"
+            android:text="@string/d_a_del_evento"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/ralewaybold"/>
+
+        <TextView
+            android:id="@+id/etFechaInicio"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="80dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="@string/seleccione_el_dia"
+            android:importantForAutofill="no"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="9pt"
+            android:fontFamily="@font/ralewayregular"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="80dp"
+            android:background="@color/colorSecondary"
+            android:text="@string/hora_dle_evento"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/ralewaybold"/>
+
+        <TextView
+            android:id="@+id/etHoraDelEvento"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="80dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/ralewayregular"
+            android:hint="@string/seleccione_la_hora"
+            android:importantForAutofill="no"
+            android:textColor="@color/colorPrimary"
+            android:textSize="9pt"
+            android:textColorHint="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="80dp"
+            android:background="@color/colorSecondary"
+            android:text="@string/duracion_evento"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/ralewaybold"/>
+
+        <Spinner
+            android:id="@+id/spnDuracion"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="80dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:fontFamily="@font/ralewayregular"
+            android:backgroundTint="@color/colorPrimary"
+            android:entries="@array/duracion"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="80dp"
+            android:background="@color/colorSecondary"
+            android:text="@string/precio_entrada"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/ralewaybold"/>
+
+        <EditText
+            android:id="@+id/etPrecioEntrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="80dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/ralewayregular"
+            android:hint="@string/precio_entrada"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="80dp"
+            android:background="@color/colorSecondary"
+            android:text="@string/nombre_sala"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/ralewaybold"/>
+
+        <Spinner
+            android:id="@+id/spnSalas"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="80dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:fontFamily="@font/ralewayregular"
+            android:backgroundTint="@color/colorPrimary"
+            android:entries="@array/salas"/>
+
+        <Button
+            android:id="@+id/btnSolicitarEvento"
+            android:hint="@string/solicitar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="80dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:fontFamily="@font/ralewaybold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/una_vez_aceptado_se_realizar_un_nuevo_contrato_detallando_monto_disponible_para_cancelar"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/ralewayregular"/>
+
+    </LinearLayout>
+</ScrollView>

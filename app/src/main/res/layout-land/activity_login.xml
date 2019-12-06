@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#27252B">
+
+
+    <ImageView
+        android:id="@+id/logoVienna1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/vienna1" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="@color/colorWhite"
+        android:hint="@string/correo"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:singleLine="false"
+        android:textColor="#E8F0F5"
+        android:textColorHighlight="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:textColorLink="#E8F0F5" />
+
+    <EditText
+        android:id="@+id/etClave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="80dp"
+        android:hint="@string/clave"
+        android:textColorHint="@color/colorWhite"
+        android:textColorHighlight="@color/colorWhite"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/colorWhite"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="80dp"
+        android:text="@string/ingresar"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite" />
+
+</LinearLayout>
